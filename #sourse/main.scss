@@ -107,7 +107,7 @@ body {
 		}
 	}
 	@media (max-width: 767px) {
-		margin: 50px 0 3	0px 0;
+		margin: 50px 10px 0;
 		&__title {
 			font-size: 80px;
 		}
@@ -255,6 +255,9 @@ body {
 			padding: 0 20px;
 			margin-top: 30px;
 		}
+		&__header {
+			margin: 0;
+		}
 	}
 }
 
@@ -388,6 +391,9 @@ body {
 		}
 		&__img {
 			width: 24.3%;
+		}
+		&__img {
+			width: 24%;
 		}
 	}
 }
@@ -716,6 +722,21 @@ body {
 	&__name-and-position {
 		color: #fff;
 	}
+	@media (max-width: 767px) {
+		&__John-Doe {
+			margin: 0 0 0 10px;
+		}
+		&__content {
+			width: 90%;
+		}
+		&__block-header {
+			margin: 30px 0 0 20px;
+		}
+		&__block-text-title {
+			font-size: 14px;
+			line-height: 17px;
+		}
+	}
 }
 
 .blogs {
@@ -775,6 +796,9 @@ body {
 			left: 34px;
 			top: 135px;
 		}
+		&__img {
+			width: 100%;
+		}
 	}
 	@media (max-width: 920px) {
 		&__cards {
@@ -787,6 +811,8 @@ body {
 			display: flex;
 			width: 100%;
 			height: 30%;
+			min-width: 120px;
+			margin-bottom: 180px;
 		}
 		&__card-text {
 			margin-left: 15px;
@@ -794,6 +820,47 @@ body {
 		&__img {
 			height: 100%;
 		}
+	}
+	@media (max-width: 767px) {
+		height: 700px;
+		&__block-header {
+			top: 30px;
+			right: 30px;
+			text-align: right;
+		}
+		&__cards {
+			top: 300px;
+			left: 30px;
+			flex-direction: row;
+			width: 90%;
+			margin: 0 auto;
+			flex-wrap: wrap;
+		}
+		&__list {
+			top: 30px;
+		}
+		&__card {
+			width: 27.2%;
+			display: block;
+		}
+		&__card-text {
+			margin-left: 0;
+		}
+		&__card-header {
+			margin-top: 5px;
+		}
+		&__card-title {
+			margin: 7px 0;
+		}
+	}
+	@media (max-width: 457px) {
+		height: 900px;
+		& ul a {
+			line-height: 35px;
+		}
+	}
+	@media (max-width: 304px) {
+		height: 1200px;
 	}
 }
 
@@ -888,7 +955,6 @@ body {
 		text-align: center;
 		text-transform: uppercase;
 		transition-duration: 0.1s;
-		width: 25%;
 		&:hover,
 		&:active {
 			background: none;
@@ -1057,6 +1123,28 @@ body {
 		}
 		&__header {
 			top: 200px;
+		}
+	}
+	@media (max-width: 767px) {
+		&__header {
+			font-size: 60px;
+			line-height: 55px;
+			top: 300px;
+		}
+		&__info {
+			padding: 0 25px;
+		}
+		&__title {
+			margin-top: 30px;
+		}
+		&__list {
+			margin-top: 30px;
+			& a {
+				line-height: 35px;
+			}
+		}
+		&__social-links {
+			margin-top: 20px;
 		}
 	}
 }

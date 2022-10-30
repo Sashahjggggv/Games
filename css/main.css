@@ -178,7 +178,7 @@ body {
 }
 @media (max-width: 767px) {
   .header-text {
-    margin: 50px 0 3 0px 0;
+    margin: 50px 10px 0;
   }
   .header-text__title {
     font-size: 80px;
@@ -323,6 +323,9 @@ body {
     padding: 0 20px;
     margin-top: 30px;
   }
+  .block-about__header {
+    margin: 0;
+  }
 }
 
 .block-text__title {
@@ -439,6 +442,9 @@ body {
   }
   .block-images__img {
     width: 24.3%;
+  }
+  .block-images__img {
+    width: 24%;
   }
 }
 
@@ -734,6 +740,21 @@ body {
 .testimonials__name-and-position {
   color: #fff;
 }
+@media (max-width: 767px) {
+  .testimonials__John-Doe {
+    margin: 0 0 0 10px;
+  }
+  .testimonials__content {
+    width: 90%;
+  }
+  .testimonials__block-header {
+    margin: 30px 0 0 20px;
+  }
+  .testimonials__block-text-title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
 
 .blogs {
   height: 500px;
@@ -788,6 +809,9 @@ body {
     left: 34px;
     top: 135px;
   }
+  .blogs__img {
+    width: 100%;
+  }
 }
 @media (max-width: 920px) {
   .blogs__cards {
@@ -800,12 +824,61 @@ body {
     display: flex;
     width: 100%;
     height: 30%;
+    min-width: 120px;
+    margin-bottom: 180px;
   }
   .blogs__card-text {
     margin-left: 15px;
   }
   .blogs__img {
     height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .blogs {
+    height: 700px;
+  }
+  .blogs__block-header {
+    top: 30px;
+    right: 30px;
+    text-align: right;
+  }
+  .blogs__cards {
+    top: 300px;
+    left: 30px;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .blogs__list {
+    top: 30px;
+  }
+  .blogs__card {
+    width: 27.2%;
+    display: block;
+  }
+  .blogs__card-text {
+    margin-left: 0;
+  }
+  .blogs__card-header {
+    margin-top: 5px;
+  }
+  .blogs__card-title {
+    margin: 7px 0;
+  }
+}
+@media (max-width: 457px) {
+  .blogs {
+    height: 900px;
+  }
+  .blogs ul a {
+    line-height: 35px;
+  }
+}
+@media (max-width: 304px) {
+  .blogs {
+    height: 1200px;
   }
 }
 
@@ -893,7 +966,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   transition-duration: 0.1s;
-  width: 25%;
 }
 .contact-us__button:hover, .contact-us__button:active {
   background: none;
@@ -1051,5 +1123,27 @@ body {
   }
   .footer__header {
     top: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__header {
+    font-size: 60px;
+    line-height: 55px;
+    top: 300px;
+  }
+  .footer__info {
+    padding: 0 25px;
+  }
+  .footer__title {
+    margin-top: 30px;
+  }
+  .footer__list {
+    margin-top: 30px;
+  }
+  .footer__list a {
+    line-height: 35px;
+  }
+  .footer__social-links {
+    margin-top: 20px;
   }
 }
