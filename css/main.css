@@ -397,6 +397,9 @@ body {
   }
 }
 
+.block-images__images-line {
+  font-size: 0;
+}
 .block-images__container {
   width: 86.666%;
   margin: 0 auto;
@@ -425,13 +428,8 @@ body {
   background: #ffc600;
 }
 .block-images__img {
-  width: 24.8%;
+  width: 25%;
   display: inline-block;
-}
-@media (max-width: 1300px) {
-  .block-images__img {
-    width: 24.5%;
-  }
 }
 @media (max-width: 767px) {
   .block-images__links {
@@ -439,12 +437,6 @@ body {
   }
   .block-images__link {
     font-size: 10px;
-  }
-  .block-images__img {
-    width: 24.3%;
-  }
-  .block-images__img {
-    width: 24%;
   }
 }
 
